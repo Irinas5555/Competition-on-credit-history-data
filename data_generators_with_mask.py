@@ -59,7 +59,8 @@ def batches_generator(list_of_paths: List[str], batch_size: int = 32, shuffle: b
                 data = pickle.load(f)
 
 
-            ids, padded_sequences, targets, masked_sequences, lenght_sequences, id_segments = data["id"], data["padded_sequences"], data["target"], data['masked_sequences'], data['lenght_sequences'], data["id_segments"]
+            ids, padded_sequences, targets, masked_sequences, lenght_sequences, id_segments = \
+            data["id"], data["padded_sequences"], data["target"], data['masked_sequences'], data['lenght_sequences'], data["id_segments"]
             
             indices = np.arange(len(ids))
             if shuffle:
