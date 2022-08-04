@@ -26,5 +26,7 @@
  - 1 модель, основанная на архитектуре Transformers
  - 1 модель, основанная на сверточных нейронных сетях.
 
-Подготовка данных для нейросетевых моделей представлена в файлах "dataset_preprocessing_utils_with_mask.py" и "data_generators_with_mask.py", архитектуры моделей прописаны в файле "models.py", циклы обучения прописаны в "train_models.py".
-Вспомогательные функции в "utils.py" и "training_aux.py".
+Подготовка данных для нейросетевых моделей представлена в файлах "dataset_preprocessing_utils_with_mask.py" и "data_generators_with_mask.py", 
+архитектуры моделей прописаны в файле "models.py", 
+циклы обучения прописаны в "train_models.py",
+вспомогательные функции в "utils.py" и "training_aux.py".
