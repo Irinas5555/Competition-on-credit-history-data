@@ -144,7 +144,8 @@ def create_padded_buckets(frame_of_sequences: pd.DataFrame, bucket_info: Dict[in
                                       "padded_sequences", 
                                       "masked_sequences", 
                                       "lenght_sequences" - длина последовательности кредитов до padding, 
-                                      "id_segments" - сегмент, к которому относится id (учитывая, что id увеличивается по времени, все id                                                         заявок разделены на группы по 100000 шт.), 
+                                      "id_segments" - сегмент, к которому относится id (учитывая, что id увеличивается по времени, 
+                                      все id заявок разделены на группы по 100000 шт.), 
                                       "target".
     """
     frame_of_sequences["sequence_length"] = frame_of_sequences["sequences"].apply(lambda x: len(x[1]))
