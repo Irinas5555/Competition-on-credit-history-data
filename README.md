@@ -1,5 +1,4 @@
 # Competition on credit history data
- The decision of the competition from ODS.ai and Alfa Bank
 
 В данном репозитории представлено решение, занявшее 7 место в "Соревновании на данных кредитных историй" от ODS.ai и Альфа Банка.
 
