@@ -221,16 +221,11 @@ class CreditsRNN_LAST_HIDDEN_SHUFFLE(nn.Module):
         self._gru = nn.GRU(input_size=self._credits_cat_embeddings_dim,
                                  hidden_size=rnn_units, batch_first=True, bidirectional=True)
 
-
         self._hidden_size = rnn_units
-        #self._pool = nn.AdaptiveAvgPool1d(10)
-        #self._flatten = nn.Flatten()
             
         pooling_result_dimension = self._hidden_size * 2 
 
         self._fc = nn.Linear(self._hidden_size * 2, 256)
-        #self._attn = nn.Linear((self._hidden_size * 2) + 256, 256)
-        #self._v = nn.Linear(256, 1, bias = False)
 
         self._top_classifier = nn.Linear(in_features=pooling_result_dimension*2 + self._hidden_size, out_features=top_classifier_units) #!!! Здесь отличие shuffle и не shuffle
                        
