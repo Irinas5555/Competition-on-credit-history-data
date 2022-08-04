@@ -35,3 +35,12 @@
 вспомогательные функции в "utils.py" и "training_aux.py",
 
 подготовка данных и обучение нейросетевых моделей - в файле "Neural_network_training.ipynb".
+
+***Модели, основанные на бустинге:***
+ - Catboost Classifier,
+ - Catboost Ranker,
+ - LGBMClassifier.
+
+Генерация признаков для бустинга представлена в файле "Prepare_data_for_boosting.ipynb", обучение моделей - в "Boosting_training.ipynb".
+
+ 
